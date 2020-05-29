@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/socket.io-stream.js"></script>
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+    <title>FIT3140 Advanced Programming Assignment 5</title>
+</head>
+<body>
+    
+<div class="msgLog" id="msgLog">
+    <div class="msgTitle" id="msgTitle">Image Recognition</div>
+    <div class="msgContent" id="msgContent">
+            <ul class="msgPart1" id="msgPart1">
+                <li>
+                    <text><u>Image Preview:</u></text>
+                </li>
+                <li>
+                    <img src="/images/icon-no-image.png" class="imagePreview" id="imagePreview" alt="Image preview...">
+                </li>
+            </ul>
+            <ul class="msgPart2" id="msgPart2">
+                <li>
+                    <text><u>Upload Your Image Here:</u></text>
+                </li>
+                <li>
+                    <input type="file" class="imageInput" id="imageInput" name="imageInput"/>
+                </li>
+                <li>
+                    <text><u>Status:</u></text>
+                </li>
+                <li>
+                    <div class="status" id="status">
+                        <span class="progressText" id="progressText">0%</span>
+                        <div class="progressBar" id="progressBar">0%</div>
+                    </div>
+                </li>
+                <li>
+                    <text><u>Data:</u></text>
+                </li>
+                <li>
+                    <div class="data" id="data">
+                        The Number Of Face(s)
+                        <br>
+                        >>>
+                        <text class="numOfFaces" id="numOfFaces">0</text>
+                    </div>
+                </li>
+                <li>
+                    <button class="detailButton" id="detailButton" disabled>More Details</button>
+                </li>
+            </ul>
+    </div>
+    <button type='button' class="uploadButton" id='uploadButton'>Upload</button>
+</div>
+    
+<div class="resultArea" id="resultArea">
+    <div class="msgTitle" id="msgTitle">Result</div>
+    <div class="resultHeader" id="resultHeader">
+        <ul>
+            <li><u>Input:</u></li>
+            <li>
+                <img class="resultInput" id="resultInput">
+            </li>
+        </ul>
+        <ul>
+            <li><u>Output:</u></li>
+            <li>
+                <img class="resultOutput" id="resultOutput">
+            </li>
+        </ul>
+    </div>
+    <div class="resultContent" id="resultContent"></div>
+    <audio class="audioHeader" id="audioHeader" controls>
+        <source class="audioArea" id="audioArea" type="audio/mpeg" src="">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+</body>
+</html>

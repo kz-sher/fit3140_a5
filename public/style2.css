@@ -1,0 +1,51 @@
+/* File Header: This css file is for designing the second part of client page
+   which is the portion below result header on the page*/
+
+.resultArea{
+    width:100%;
+    display: none;
+    flex-direction: column;
+}
+
+.resultHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.resultHeader > ul {
+    background-color: #d9d9d9;
+    list-style-type: none;
+    margin: 5px 5px 5px 5px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+    
+.resultInput, .resultOutput{
+    max-width: 420px;
+    max-height: 420px;
+}
+
+.resultContent{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.resultContent > ul{
+    background-color: #d9d9d9;
+    list-style-type: none;
+    margin: 5px 5px 5px 5px;
+    padding: 2% 3% 2% 3%;
+}
+
+[id^="face"]{
+    width: 250px;
+    height: 250px;
+}
+
+audio{
+    width:100%;
+    padding: 15px 0px 15px 0px;
+}

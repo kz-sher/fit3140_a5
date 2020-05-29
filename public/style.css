@@ -1,0 +1,110 @@
+/* File Header: This css file is for designing the first part of client page
+   which is the portion above result header on the page*/
+
+.msgLog{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.msgTitle{
+    height:3%;
+    width:100%;
+    background-color: black;
+    padding: 15px 0px 15px 0px;
+    font-family: monospace;
+    font-size: 25px;
+    color:white;
+    text-align: center;
+}
+
+.msgContent{
+    display:flex;
+    justify-content:space-around;
+}
+
+.msgPart1, .msgPart2{
+    height:80%;
+    width:100%;
+    background-color: #d9d9d9;
+    list-style-type: none;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.msgPart1{
+    margin-right: 5px;
+}
+
+.msgPart2{
+    margin-left: 5px;
+}
+
+.imageInput{
+    cursor: pointer;
+}
+
+.uploadButton{
+    height:7%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.status{
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 25px;
+    text-align: center;
+}
+
+.progressText{
+    position: absolute;
+}
+
+.progressBar{
+    width: 1%;
+    height: 25px;
+    border-radius: 9px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.imagePreview{
+    max-width: 420px;
+    max-height: 420px;
+}
+
+.data{
+    width:100%;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.numOfFaces{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 80px;
+}
+
+.detailButton{
+    padding: 15px 25px 15px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 100;
+    cursor: not-allowed;
+}
+
+li{
+    padding: 2% 3% 2% 3%;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+text{
+    font-size: 20px;
+}

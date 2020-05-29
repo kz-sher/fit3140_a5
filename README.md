@@ -1,5 +1,4 @@
-<h1 align="center" > Facial Image Analysis Using Cloud Services <h1>
-<h2 align="center" > By Ho Kong Zheng & Nelson Wong <h2>
+# FIT3140 Assignemnt 5
 
 Libraries that you need to install: <br />
 - socket.io <br />
@@ -24,4 +23,3 @@ Some issues you might face due to: <br />
 - Unable to have face detecting or audio playing because quota exceeded as free trial limits the use of the API service <br />
 - Audio stream passing delay occurs if many faces are detected after another process is conducted (Not really an error but imperfect implementation) <br />
 - Unresponsive page design as our aim mainly focus on the functionality. The view is built according to 13 inches screen-size but it still looks nice when it comes to 15 inches screen-size by turning the page to full screen. <br />
-# fit3140_a5
